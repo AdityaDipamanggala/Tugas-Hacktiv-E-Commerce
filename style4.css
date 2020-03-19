@@ -1,0 +1,88 @@
+/* heading */
+
+h1 { 
+	font: bold 100% sans-serif; 
+	letter-spacing: 0.5em; 
+	text-align: center; 
+	text-transform: uppercase; }
+/* header */
+
+header { 
+	margin: 0 0 1em; 
+}
+header:after { 
+	clear: both; 
+	content: ""; 
+	display: table; 
+}
+
+header h1 { 
+	background: #000; 
+	border-radius: 0.25em; 
+	color: #FFF; 
+	margin: 0 0 1em; 
+	padding: 0.5em 0; 
+}
+
+/* article */
+
+article, 
+article address, 
+table.meta, 
+table.inventory { 
+	margin: 0 0 3em; 
+}
+article:after { 
+	clear: both; 
+	content: ""; 
+	display: table; 
+}
+
+article h1 { 
+	clip: rect(0 0 0 0); 
+	position: absolute; 
+}
+
+article address { 
+	float: left; 
+	font-size: 125%; 
+	font-weight: bold; 
+}
+
+* 
+{ 
+	margin: 0; 
+	padding: 0; 
+}
+
+body { font: 14px/1.4 sans-serif, serif; }
+#page-wrap { width: 800px; margin: 0 auto; }
+
+label { border: 0; overflow: hidden; resize: none; }
+table { border-collapse: collapse; }
+table td, table th { border: 1px solid black; padding: 5px; }
+
+#header { height: 15px; width: 100%; margin: 20px 0; background: #222; text-align: center; color: white; font: bold 15px Helvetica, Sans-Serif; text-decoration: uppercase; letter-spacing: 20px; padding: 8px 0px; }
+
+#address { width: 230px; height: 100px; float: left; }
+#customer { overflow: hidden; }
+#customer-title { font-size: 20px; font-weight: bold; float: left; }
+
+#meta { margin-top: 1px; width: 300px; float: right; }
+#meta td { text-align: right;}
+#meta td.meta-head { text-align: left; background: #eee; }
+
+#items { clear: both; width: 100%; margin: 30px 0 0 0; border: 1px solid black; }
+#items th { background: #eee; }
+#items td.label { text-align: right;}
+#items tr.item-row td { border: 0; vertical-align: top;}
+#items td.description { width: 300px; }
+#items td.item-name { width: 140px; }
+#items td.total-line { border-right: 0; text-align: right; }
+#items td.total-value { border-left: 0; padding: 10px; }
+#items td.balance { background: #eee; }
+#items td.blank { border: 0; }
+
+#terms { text-align: center; margin: 20px 0 0 0; }
+#terms h5 { text-transform: uppercase; font: 13px Helvetica, Sans-Serif; letter-spacing: 10px; border-bottom: 1px solid black; padding: 0 0 8px 0; margin: 0 0 8px 0; }
+#terms label { width: 100%; text-align: center;padding-bottom:30px}

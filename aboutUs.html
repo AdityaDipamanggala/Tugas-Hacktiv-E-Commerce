@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+
+
+            box-sizing: border-box;
+        }
+
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(background.png) no-repeat;
+            background-size: cover;
+
+
+        }
+
+        /* Style the header */
+        header {
+            padding: 5px;
+            text-align: center;
+            font-size: 35px;
+            color: black;
+
+
+
+        }
+
+
+
+
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 250px;
+            /* only for demonstration, should be removed */
+            padding: 20px;
+            background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 255, 250, 1));
+
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            font-size: 17px;
+            padding: 20px;
+            width: 70%;
+            height: 250px;
+            background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 255, 250, 1));
+
+            /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            padding: 10px;
+            text-align: center;
+            height: 200px;
+            background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 255, 250, 1));
+
+
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 400px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <h2>About Us</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <div class="row">Download Aplikasinya dan dapatkan Mobile Discount
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="row">
+                        <a href="https://play.google.com/store/apps/details?id=com.nelayanapp.bungabuket&hl=in"><img
+                                style="margin-left:20px;" src="goggleplay.png"></a>
+                    </div>
+
+                    <br><br>like dan follow akun sosial media kami
+
+                    <br><a href="https://www.facebook.com/Bunga-wisuda-446800028985760/"><img src="fb.png" /></a>
+                    &nbsp; <a href="http://www.instagram.com/angelombouquet"><img src="instagram.png" /></a>
+                    &nbsp; <a href="https://www.twitter.com/frescut"><img src="twitter.png" /></a>
+                </div>
+        </nav>
+
+        <article>
+            <p><strong>Kami merupakan toko bunga online yang berpusat di Jakarta dan kami juga hadir di Bandung dan akan
+                    menyusul kota
+                    kota besar lain di Indonesia. Kami selalu berkomitmen memberikan rangkaian bunga yang terbaik
+                    seperti
+                    bunga
+                    papan untuk
+                    duka cita, bunga papan pernikahan atau wedding, bunga papan ucapan selamat baik untuk individu
+                    maupun
+                    perusahaan
+                    yang sedang grand opening untuk mengucapkan congratulaions ditambah dengan bunga standing flowers
+                    maupun
+                    bunga
+                    meja / table flowers yang memikat serta profesional. Selain itu kami menghadirkan rangkaian bunga
+                    tangan
+                    atau
+                    bunga hand buket/ hand bouquet untuk anda berikan kepada orang yang anda kasihi sebagai bentuk
+                    ungkapan
+                    perasaan
+                    terdalam anda untuk berbagai acara seperti valentine, romantisme, ungkapan kasih sayang, hari ibu
+                    maupun
+                    ungkapan lainnya. Dengan dukungan tim yang handal maka Panorama Garden mampu menghadirkan pemesanan
+                    online yang
+                    mudah dan pengiriman yang cepat dan tepat waktu.</strong></p>
+        </article>
+    </section>
+
+    <footer>
+        <div class="col-md-6">
+            <div style="width:60%; float:left;">
+                <h3>Jakarta Office :</h3>
+                <p>
+                    <b>Phone :</b>(+62) 21-527292<br>
+                    Jl. Kelapa Gading No.212<br>
+                    Jakarta Timur <br>
+                    <b>sales@panoramagarden.com</b><br>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div style="width:20%; float:left;">
+                <h3>Bandung Office :</h3>
+                <p>
+                    Kompl. Bunga Indah Blok J No.29<br>
+                    Taman Perjuangan<br>
+                    Bandung
+                </p>
+            </div>
+    </footer>
+
+</body>
+
+</html>

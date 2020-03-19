@@ -1,0 +1,106 @@
+
+body{
+	padding: 0;
+	margin: 0;
+}
+.wrapper{
+	background: url(background.png) no-repeat;
+	background-size: cover;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.navbar{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	top: 0;
+    left: 0;
+	background: rgba(0,0,0,0.4);
+}
+.navbar h1{font-family: 'Liu Jian Mao Cao', cursive;
+  font-size: 40px;
+  top: 0;
+  left: 0;
+  color: white;
+  position: absolute;
+}
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding: 6px 13px;
+	text-decoration: none;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: rgb(226, 224, 72);
+	border-radius: 2px;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    background:hsl(0, 0%, 96%, 0.95);
+    justify-content: center;
+    overflow: auto;
+    width: 75vw;
+    height: 90vh;
+    position: relative;
+    top: 85px;
+    left: 12vw;
+    
+}
+.product-box{
+    margin: 10px;
+    position: relative;
+    width: 9cm;
+    height: 10cm;
+   ;
+}
+img{
+    width: 8cm;
+    height: auto;
+}
+
+.product-box a {
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	padding: 6px 13px;
+    text-decoration: none;
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+    font-weight: bold;
+}
+.product-box p {
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.product-box .button,
+.product-box a :hover{
+	background: white;
+	border-radius: 2px;
+}
+.product-box p .paket{
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    font-weight: bold;
+    font-size: 20px;}

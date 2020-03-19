@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<title>Invoice</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<head>
+		<meta charset='UTF-8'>
+		<title>Tugas Kelompok | Invoice</title>
+	</head>
+		<div id="page-wrap">
+		<header>
+			<h1>Invoice</h1>
+			<div id="identity">
+				<label id="address">TOKO Panorama Garden Jl. Kelapa Gading No.212 Jakarta Timur
+Telepon: (+62) 21-527292</label>
+			</div>
+		</header>
+		
+			<div style="clear:both"></div>
+			<div id="customer">
+				<address>
+					<p>Kepada
+					<br>customer
+					<br>Jl.
+					<br>UP	:
+					</p>
+				</address>
+				<table id="meta">
+					<tr>
+						<td class="meta-head">Invoice #</td>
+						<td><label>No-Inv-001</label></td>
+					</tr>
+					<tr>
+
+						<td class="meta-head">Tanggal</td>
+						<td><label id="date"></label></td>
+					</tr>
+					<tr>
+						<td class="meta-head">Total Tagihan</td>
+						<td><div class="due"></div></td>
+					</tr>
+
+				</table>
+			</div>
+			<table id="items">
+
+				<tr>
+					<th>Barcode</th>
+					<th>Nama Barang</th>
+					<th>Harga Satuan</th>
+					<th>Quantity</th>
+					<th>Total</th>
+				</tr>
+
+				<tr class="item-row">
+					<td class="item-name">0898911198744666</td>
+					<td class="description"><label>Paket 1</label></td>
+					<td class="label">Rp. 1</td>
+					<td class="label">2</td>
+					<td class="label">Rp. 2</td>
+				</tr>
+
+				<tr class="item-row">
+					<td class="item-name"><label></label></td>
+
+					<td class="description"><label> </label></td>
+					<td class="label"> </td>
+					<td class="label"></td>
+					<td class="label"></td>
+				</tr>
+
+				<tr class="item-row">
+					<td class="item-name"><label></label></td>
+
+					<td class="description"><label></label></td>
+					<td class="label"></td>
+					<td class="label"></td>
+					<td class="label"></td>
+				</tr>
+				
+				<tr class="item-row">
+					<td class="item-name"></td>
+					<td class="description"><label></label></td>
+					<td class="label"></td>
+					<td class="label"></td>
+					<td class="label"></td>
+				</tr>
+
+				<tr class="item-row">
+					<td class="item-name"><label></label></td>
+
+					<td class="description"><label></label></td>
+					<td class="label"></td>
+					<td class="label"></label></td>
+					<td class="label"></td>
+				</tr>
+
+				<tr class="item-row">
+					<td class="item-name"><label></label></td>
+
+					<td class="description"><label></label></td>
+					<td class="label"></td>
+					<td class="label"></td>
+					<td class="label"></td>
+				</tr>
+				
+				<!-- Jarak item dengan subtotal -->
+				<tr class="item-row"><td></td></tr>
+				<tr class="item-row"><td></td></tr>
+				<tr>
+					<td colspan="2" class="blank"> </td>
+					<td colspan="2" class="total-line">Subtotal</td>
+					<td class="total-value label"><div id="subtotal">Rp. 2</div></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="blank"> </td>
+					<td colspan="2" class="total-line balance">Diskon</td>
+					<td class="total-value balance label"><div class="due">Rp. 0.00</div></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="blank"> </td>
+					<td colspan="2" class="total-line">Pajak PPN (10%)</td>
+
+					<td class="total-value label"><label id="paid">Rp. 0,2</label></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="blank"> </td>
+					<td colspan="2" class="total-line balance">Grand Total</td>
+					<td class="total-value balance label"><div class="due">Rp. 2.2 </div></td>
+				</tr>
+			</table>
+			<br><br><br><br>
+			<div id="terms">
+				<h5>CATATAN TAMBAHAN</h5>
+				<label>Pembayaran dapat dilakukan tunai atau dengan transfer bank
+					<br>Bank BRI rek: 081578195286 an Toko Bunga Online
+					<br>Bank BCA rek: 082243748305 an Toko Bunga Online
+					<br>Bank Mandiri rek: 09821999935 an Toko Bunga online</label>
+			</div>
+		</div>
+</body>
+</html>
